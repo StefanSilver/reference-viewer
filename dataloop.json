@@ -1,8 +1,8 @@
 {
   "id": "2",
-  "version": "1.0.8",
+  "version": "1.0.0",
   "creator": "adva.a@dataloop.ai",
-  "name": "referenceViewer2",
+  "name": "referenceViewer3",
   "displayName": "reference-viewer",
   "description": "",
   "icon": "icon-dl-sdk-documentation",
@@ -65,26 +65,13 @@
       }
     ],
     "hooks": [],
-    "modules": [
-      {
-        "name": "floatingWindow",
-        "entryPoint": "main.py",
-        "mainClass": "ServiceRunner",
-        "initInputs": [],
-        "version": {
-          "dtlpy": "1.70.29",
-          "verify": false
-        },
-        "functions": []
-      }
-    ],
+    "modules": [],
     "services": [
       {
-        "name": "runner81",
+        "name": "runner83",
         "panelNames": [
           "referenceViewer"
         ],
-        "moduleName": "floatingWindow",
         "initParams": {},
         "packageName": "default-package",
         "packageRevision": "latest",
@@ -93,7 +80,7 @@
           "numReplicas": 1,
           "concurrency": 10,
           "pyPackages": {},
-          "runnerImage": "gcr.io/viewo-g/piper/agent/runner/cpu/main:1.70.29.latest",
+          "runnerImage": "gcr.io/viewo-g/piper/agent/runner/cpu/main:1.71.23.0",
           "singleAgent": false,
           "autoscaler": {
             "type": "rabbitmq",
