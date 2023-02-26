@@ -9,10 +9,11 @@ cp -r ./dist ./panels/referenceViewer
 ls ./panels/
 ls ./panels/referenceViewer
 
-if test -d ./panels/referenceViewer; then echo 'Copied /dist to /panels/referenceViewer'; fi
-
+if test -d ./panels/referenceViewer; then echo '/panels/referenceViewer exists'; fi
 python3 ./build.py
 rm -r ./dist
+
+if test -d ./panels/referenceViewer/assets; then echo 'Copied dist succesfully'; fi
 echo $(ls)
 echo $(ls ./panels)
 echo $(ls ./panels/referenceViewer)
