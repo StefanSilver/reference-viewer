@@ -11,5 +11,6 @@ ls ./panels/referenceViewer
 echo 'Copied /dist to /panels/referenceViewer'
 python3 ./build.py
 rm -r ./dist
+echo $(ls)
 echo $(ls ./panels)
 echo $(ls ./panels/referenceViewer)
