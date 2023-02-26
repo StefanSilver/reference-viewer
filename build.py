@@ -23,3 +23,6 @@ with open(index_path, 'r') as html_file:
 
 with open(f'./panels/{panel_name}/index.html', 'w') as updated_html_file:
     updated_html_file.writelines(lines)
+
+print("Done building")
+print(os.environ.get('VITE_SOME_TEST'))
