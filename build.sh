@@ -8,7 +8,9 @@ cp -r ./dist ./panels/referenceViewer
 
 ls ./panels/
 ls ./panels/referenceViewer
-echo 'Copied /dist to /panels/referenceViewer'
+
+if test -d ./panels/referenceViewer; then echo 'Copied /dist to /panels/referenceViewer'; fi
+
 python3 ./build.py
 rm -r ./dist
 echo $(ls)
