@@ -1,5 +1,6 @@
 <template>
 	<div class="full-screen">
+		--- {{ envVar }} ---
 		<div v-if="loading" class="content">Content is loading...</div>
 		<div v-else>
 			<FloatingWindow
@@ -33,6 +34,7 @@ const initialWidth = null
 const initialHeight = null
 const type = ref('image/png')
 const url = ref('')
+const envVar = ref(import.meta.env.VITE_SOME_TEST || "secret didn't work")
 
 onMounted(async () => {
 	await dl.init()
