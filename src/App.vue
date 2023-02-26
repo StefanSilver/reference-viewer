@@ -34,7 +34,7 @@ const initialWidth = null
 const initialHeight = null
 const type = ref('image/png')
 const url = ref('')
-const envVar = ref(import.meta.env.VITE_SOME_TEST || "secret didn't work")
+const envVar = ref(__VITE_SOME_TEST || "secret didn't work")
 
 onMounted(async () => {
 	console.log(envVar)

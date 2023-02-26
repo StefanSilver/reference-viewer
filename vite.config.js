@@ -4,6 +4,9 @@ import viteBasicSslPlugin from '@vitejs/plugin-basic-ssl'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  define: {
+    __VITE_SOME_TEST: `'${process.env.VITE_SOME_TEST}'`
+  },
   server: {
     port: 3002,
     https: true,
