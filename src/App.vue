@@ -37,6 +37,7 @@ const url = ref('')
 const envVar = ref(import.meta.env.VITE_SOME_TEST || "secret didn't work")
 
 onMounted(async () => {
+	console.log(import.meta.env.VITE_SOME_TEST || "secret didn't work")
 	console.log('@@@@', import.meta.env)
 	console.log('@@pe', process.env.VITE_SOME_TEST, process.env.VUE_APP_TEST)
 
