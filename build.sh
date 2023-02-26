@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 if test -d ./dist; then rm -r ./dist; fi
 if test -d ./panels/referenceViewer; then rm -r ./panels/referenceViewer; fi
@@ -10,7 +10,7 @@ ls ./panels/
 ls ./panels/referenceViewer
 
 if test -d ./panels/referenceViewer; then echo '/panels/referenceViewer exists'; fi
-python3 ./build.py
+python ./build.py
 rm -r ./dist
 
 if test -d ./panels/referenceViewer/assets; then echo 'Copied dist succesfully'; fi

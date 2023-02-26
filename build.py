@@ -2,6 +2,7 @@ import shutil
 import json
 import os
  
+print("Running build.py...")
 with open('./dataloop.json') as json_file:
     data = json.load(json_file)
     panel_name = data['components']['panels'][0]['name']
